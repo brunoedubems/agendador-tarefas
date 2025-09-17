@@ -16,11 +16,13 @@ public class TarefasDTO {
     private String id;
     private String nomeTarefa;
     private String descricao;
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm")
     private LocalDateTime dataCriacao;
 
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm")
     private LocalDateTime dataEvento;
     private String emailUsuario;
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm")
     private LocalDateTime dataAlteracao;
     private StatusNotificacaoEnum statusNotificacaoEnum;
 
